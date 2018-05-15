@@ -1,0 +1,29 @@
+git status
+
+vagrant [requestPackage]> git add httpRequest.js
+vagrant [requestPackage]> git add package.json
+vagrant [requestPackage]> git add package-lock.json
+vagrant [requestPackage]> git add test.js
+vagrant [requestPackage]> git add downloaded.html
+vagrant [requestPackage]> git add future.jpg
+vagrant [requestPackage]> git status
+
+git commit
+git push
+cat .git/config
+pwd
+git status
+vagrant [w2d1]> git remote add origin git@github.com:alvintian/w2d1.git
+vagrant [w2d1]> git push -u origin master
+git add .
+git reset requestPackage/node_modules/
+git commit -m ""
+git status
+git rm --cached requestPackage/
+git status
+git rm --cached callbacks/
+git commit -m "remove cached nest repo"
+rm -rf callbacks/.git/ requestPackage/.git/
+git add .
+git reset requestPackage/node_modules/
+git commit -m "cleaned git from directories"
